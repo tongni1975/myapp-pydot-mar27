@@ -1,0 +1,36 @@
+/* element selector rule to style */
+
+h1 {
+    color: red;
+    font-size: 2em;
+    font-family: monospace;
+}
+
+p {
+    font-style: italic;
+}
+
+/*css class must always start with a . */
+
+.picture{
+    width: 30em;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.large{
+    font-size: 3em;
+}
+
+.small{
+    font-size: .3em;
+}
+
+/* this is an ID selector. starts with a # */
+
+#special{
+    background-color: lightblue;
+    border: 1px blueviolet;
+    padding: 5px;
+}

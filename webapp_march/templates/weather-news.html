@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>News and weather for {{ city }}</title>
+	</head>
+	<body>
+
+		<div>
+			<h2>Weather for {{ city }}</h2>
+
+			{% for w in weather %}
+				<div>{{ w }}</div>
+			{% endfor %}
+		</div>
+
+		<div>
+			<h2>News</h2>
+			{% for n in news %}
+				<div>
+					<div>
+						<img src="{{ n['image'] }}" style="height: 200px;">
+					</div>
+					<h5><a href="{{ n['url'] }}">{{ n['title'] }}</a></h5>
+				</div>
+			{% endfor %}
+
+		</div>
+
+	</body>
+</html>
