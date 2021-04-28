@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: urllib3
+    versions:
+    - 1.26.3
+  - dependency-name: pymongo
+    versions:
+    - 3.11.2
+  - dependency-name: jinja2
+    versions:
+    - 2.11.2
